@@ -130,7 +130,8 @@ int main()//função principal (main) sempre vai ser a primeira a ser executada
 		printf("Escolha a opção desejada do menu abaixo:\n\n");
 		printf("\t1 - Resgistrar nomes\n"); //barra t serve para inserir um paragrafo
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n\n");
+		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do sistema\n\n\n");
 		printf("Opção desejada:  ");
 		
 		scanf("%d", &opcao); //scanf armazena tudo que o usuario digita - aqui eu to referenciando tudo qque o usuario digita na variavel opcao 
@@ -149,6 +150,11 @@ int main()//função principal (main) sempre vai ser a primeira a ser executada
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:
